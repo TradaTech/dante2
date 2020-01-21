@@ -117,10 +117,10 @@ export default class DanteEditor extends React.Component {
   }
 
   componentDidUpdate(prevProps){
-    // deprecated
-    //if(prevProps.content && prevProps.content != this.props.content)
-    //  this.updateState()
-    
+    if (this.props.content && this.props.content._overwrite && prevProps.content != this.props.content) {
+      delete this.props.content._overwrite
+      this.updateState()
+    }
   }
 
   initializeState = ()=> {
@@ -130,12 +130,12 @@ export default class DanteEditor extends React.Component {
         this.decodeEditorContent(this.props.content), {
           decorator: this.decorator
         });
+      
+      this.onChange(newEditorState)
     }
-    this.onChange(newEditorState)
   }
 
   updateState = ()=>{
-    console.log(this.state)
     const newContentState = convertFromRaw(this.props.content );
     let newEditorState = EditorState.push(
       this.state.editorState,
@@ -607,6 +607,7 @@ export default class DanteEditor extends React.Component {
 
   // TODO: make this configurable
   handleBeforeInput =(chars)=> {
+    console.log('handleBeforeInput', chars)
     const currentBlock = getCurrentBlock(this.state.editorState)
 
     if(!currentBlock) return
@@ -711,6 +712,8 @@ export default class DanteEditor extends React.Component {
   }
 
   KeyBindingFn =(e)=> {
+    console.log('KeyBindingFn', e.keyCode)
+    this.composite = (e.keyCode === 229)
 
     //⌘ + B / Ctrl + B   Bold
     //⌘ + I / Ctrl + I   Italic

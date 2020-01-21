@@ -4891,10 +4891,9 @@ draft-js-utils@^1.2.0:
   resolved "https://registry.yarnpkg.com/draft-js-utils/-/draft-js-utils-1.2.0.tgz#f5cb23eb167325ffed3d79882fdc317721d2fd12"
   integrity sha1-9csj6xZzJf/tPXmIL9wxdyHS/RI=
 
-draft-js@0.11.4:
+"draft-js@github:TradaTech/draft-js":
   version "0.11.4"
-  resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.11.4.tgz#e48782b96b90a5c14f2cb34c164c2a1a359d8a48"
-  integrity sha512-BLZ59s0vkDj/zI8UPo9Nit/hPsl11ztDejxDCQlVbvEXJSWrTXqO6ZYgdw3hXLtuojq/URqq3wTrpnb3dvzvLA==
+  resolved "https://codeload.github.com/TradaTech/draft-js/tar.gz/93cd413b48cd31fd203e722eb96957d3f65e5453"
   dependencies:
     fbjs "^1.0.0"
     immutable "~3.7.4"

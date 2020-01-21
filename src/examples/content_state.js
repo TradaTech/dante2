@@ -40,8 +40,8 @@ export default class Editor extends React.Component {
 }
 
 
-import React, { Component } from 'react';
-import { EditorState, Editor, convertToRaw, convertFromRaw } from 'draft-js';
+import { Component } from 'react';
+import { EditorState, convertToRaw, convertFromRaw } from 'draft-js';
 import debounce from 'lodash/debounce';
 
 class App extends Component {
