@@ -17,6 +17,7 @@
   "module": "package/Dante.es.js",
   "browser": "package/umd/Dante.js",
   "files": [
+    "package",
     "package/umd",
     "package/lib",
     "package/dist",
@@ -55,6 +56,7 @@
     "fs-promise": "^2.0.3",
     "gh-pages": "^1.2.0",
     "node-sass": "^4.9.3",
+    "output-file-sync": "^2.0.1",
     "polished": "^3.4.0",
     "react-powerplug": "^1.0.0-rc.1",
     "rollup": "^0.64.1",
