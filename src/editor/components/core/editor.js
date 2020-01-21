@@ -607,7 +607,6 @@ export default class DanteEditor extends React.Component {
 
   // TODO: make this configurable
   handleBeforeInput =(chars)=> {
-    console.log('handleBeforeInput', chars)
     const currentBlock = getCurrentBlock(this.state.editorState)
 
     if(!currentBlock) return
@@ -712,8 +711,6 @@ export default class DanteEditor extends React.Component {
   }
 
   KeyBindingFn =(e)=> {
-    console.log('KeyBindingFn', e.keyCode)
-    this.composite = (e.keyCode === 229)
 
     //⌘ + B / Ctrl + B   Bold
     //⌘ + I / Ctrl + I   Italic

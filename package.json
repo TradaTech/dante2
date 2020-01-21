@@ -15,7 +15,10 @@
   "main": "package/Dante.cjs.js",
   "jsnext:main": "package/es/components/Dante/index.js",
   "module": "package/Dante.es.js",
-  "browser": "package/umd/Dante.js",
+  "browser": {
+    "./package/Dante.cjs.js": "./package/umd/Dante.js",
+    "./package/Dante.es.js": "./package/Dante.es.js"
+  },
   "files": [
     "package",
     "package/umd",
