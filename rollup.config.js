@@ -90,7 +90,7 @@ export default [
     input: 'src/editor/components/Dante/Dante.js',
     output: {
       name: 'Dante',
-      file: pkg.browser,
+      file: pkg.browser['./' + pkg.main],
       format: 'umd'
     },
     plugins: pluginsConfig

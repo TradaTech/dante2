@@ -1140,7 +1140,6 @@ function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "handleBeforeInput", function (chars) {
-      console.log('handleBeforeInput', chars);
       var currentBlock = getCurrentBlock(_this.state.editorState);
       if (!currentBlock) return;
       var blockType = currentBlock.getType();
@@ -1253,14 +1252,12 @@ function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "KeyBindingFn", function (e) {
-      console.log('KeyBindingFn', e.keyCode);
-      _this.composite = e.keyCode === 229; //⌘ + B / Ctrl + B   Bold
+      //⌘ + B / Ctrl + B   Bold
       //⌘ + I / Ctrl + I   Italic
       //⌘ + K / Ctrl + K   Turn into link
       //⌘ + Alt + 1 / Ctrl + Alt + 1   Header
       //⌘ + Alt + 2 / Ctrl + Alt + 2   Sub-Header
       //⌘ + Alt + 5 / Ctrl + Alt + 5   Quote (Press once for a block quote, again for a pull quote and a third time to turn off quote)
-
       var cmd;
 
       if (e.altKey) {
