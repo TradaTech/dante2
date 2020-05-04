@@ -41,13 +41,11 @@
   line-height: $dante-editor-line-height;
 }
 
-@media (max-width: 500px) {
-
+@media (max-width: 768px) {
   .postContent {
-    font-size: $dante-editor-font-size - 6;
-    line-height: $dante-editor-line-height;
+    font-size: $dante-editor-font-size - 2;
+    line-height: $dante-editor-line-height - 0.1;
   }
-
 }
 
 .postField {

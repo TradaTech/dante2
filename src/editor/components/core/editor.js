@@ -17,10 +17,6 @@ import {
 } from 'draft-js'
 
 import {
-  convertToHTML,
-} from 'draft-convert'
-
-import {
   addNewBlock,
   resetBlockWithType,
   updateDataOfBlock,
@@ -269,19 +265,6 @@ export default class DanteEditor extends React.Component {
     }).join("\n")
 
     return out
-  }
-
-  emitHTML2 = ()=> {
-    return convertToHTML({
-      entityToHTML: (entity, originalText) => {
-        if (entity.type === 'LINK') {
-          return `<a href="${ entity.data.url }">${ originalText }</a>`
-        } else {
-          return originalText
-        }
-      }
-
-    })(this.state.editorState.getCurrentContent())
   }
 
   getLocks = ()=> {

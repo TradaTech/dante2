@@ -37,3 +37,8 @@
   margin: auto;
   max-width: 100%;
 }
+
+.sectionLayout--fullWidth .aspectRatioPlaceholder {
+  max-width: none!important;
+  max-height: none!important;
+}

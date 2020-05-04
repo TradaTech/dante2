@@ -2,8 +2,6 @@ import styled from '@emotion/styled'
 import { math, lighten, opacify, desaturate } from 'polished'
 
 const EditorContainer = styled.div`
-  
-  @import url('//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400,300,800');
 
   font-family: ${props => props.theme.dante_font_family_serif};
   letter-spacing: 0.01rem;

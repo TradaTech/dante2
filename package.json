@@ -73,10 +73,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "draft-convert": "^2.1.2",
     "draft-js": "github:TradaTech/draft-js",
     "draft-js-custom-styles": "^2.1.1",
-    "draft-js-export-html": "^1.2.0",
     "draft-js-multidecorators": "^1.0.0",
     "draft-js-prism": "^1.0.6",
     "polished": "^3.4.0",

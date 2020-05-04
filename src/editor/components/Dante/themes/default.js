@@ -1,4 +1,4 @@
-const dante_font_family_sans = `'jaf-bernino-sans', 'Open Sans', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans_serif;`
+const dante_font_family_sans = `system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;`
 const tooltip_size  = '32px'
 const dante_control_color = '#333333'
 const dante_inversed_color = '#FFFFFF'
@@ -7,23 +7,22 @@ const dante_text_color = '#4a4a4a'
 
 
 const theme = {
-  dante_font_family_serif: `'freight-text-pro', 'Merriweather', Georgia, Cambria, "Times New Roman", Times, serif;`,
+  dante_font_family_serif: dante_font_family_sans,
   dante_font_family_sans: dante_font_family_sans,
   dante_font_family_mono: `Menlo, Monaco, Consolas, "Courier New", "Courier", monospace;`,
   dante_font_family_base: dante_font_family_sans,
 
   // Editor
-  dante_editor_font_size: '18px' ,
-  dante_editor_line_height: '1.9' ,
+  dante_editor_font_size: '20px' ,
+  dante_editor_line_height: '1.7' ,
 
-  dante_font_family_sans_serif: 'comic-sans',
+  dante_font_family_sans_serif: dante_font_family_sans,
   dante_visual_debugger: 'false',
   dante_text_color: dante_text_color,
   dante_inversed_color: dante_inversed_color,
   dante_accent_color: dante_accent_color,
   dante_control_color: dante_control_color,
   dante_popover_color: dante_inversed_color,
-
 
   //dante_font_size_base:  '24px',
   //line_height_base:     '1.428571429', // 20/14

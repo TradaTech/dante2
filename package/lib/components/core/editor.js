@@ -13,8 +13,6 @@ var _lodash = require("lodash");
 
 var _draftJs = require("draft-js");
 
-var _draftConvert = require("draft-convert");
-
 var _index = require("../../model/index.js");
 
 var _debug = _interopRequireDefault(require("./debug"));
@@ -205,18 +203,6 @@ function (_React$Component) {
         return o.getText();
       }).join("\n");
       return out;
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "emitHTML2", function () {
-      return (0, _draftConvert.convertToHTML)({
-        entityToHTML: function entityToHTML(entity, originalText) {
-          if (entity.type === 'LINK') {
-            return "<a href=\"".concat(entity.data.url, "\">").concat(originalText, "</a>");
-          } else {
-            return originalText;
-          }
-        }
-      })(_this.state.editorState.getCurrentContent());
     });
 
     _defineProperty(_assertThisInitialized(_this), "getLocks", function () {

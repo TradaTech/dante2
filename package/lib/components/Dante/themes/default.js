@@ -9,21 +9,21 @@ var _theme;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var dante_font_family_sans = "'jaf-bernino-sans', 'Open Sans', \"Lucida Grande\", \"Lucida Sans Unicode\", \"Lucida Sans\", Geneva, Verdana, sans_serif;";
+var dante_font_family_sans = "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;";
 var tooltip_size = '32px';
 var dante_control_color = '#333333';
 var dante_inversed_color = '#FFFFFF';
 var dante_accent_color = '#5BD974';
 var dante_text_color = '#4a4a4a';
 var theme = (_theme = {
-  dante_font_family_serif: "'freight-text-pro', 'Merriweather', Georgia, Cambria, \"Times New Roman\", Times, serif;",
+  dante_font_family_serif: dante_font_family_sans,
   dante_font_family_sans: dante_font_family_sans,
   dante_font_family_mono: "Menlo, Monaco, Consolas, \"Courier New\", \"Courier\", monospace;",
   dante_font_family_base: dante_font_family_sans,
   // Editor
-  dante_editor_font_size: '18px',
-  dante_editor_line_height: '1.9',
-  dante_font_family_sans_serif: 'comic-sans',
+  dante_editor_font_size: '20px',
+  dante_editor_line_height: '1.7',
+  dante_font_family_sans_serif: dante_font_family_sans,
   dante_visual_debugger: 'false',
   dante_text_color: dante_text_color,
   dante_inversed_color: dante_inversed_color,

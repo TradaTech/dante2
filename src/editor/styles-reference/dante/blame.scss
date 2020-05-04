@@ -233,6 +233,13 @@ a[rel=token], .markup--query {
     margin-right: -200px;
 }
 
+@media (max-width: 1012px) {
+  .graf--layoutFillWidth {
+    margin-left: -9.5%;
+    margin-right: -9.5%;
+  }
+}
+
 .graf--layoutOutsetLeft {
     width: 75%;
 }
