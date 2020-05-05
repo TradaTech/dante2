@@ -1,4 +1,4 @@
-const dante_font_family_sans = `system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;`
+const dante_font_family_sans = `system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;`
 const tooltip_size  = '32px'
 const dante_control_color = '#333333'
 const dante_inversed_color = '#FFFFFF'
@@ -7,7 +7,7 @@ const dante_text_color = '#4a4a4a'
 
 
 const theme = {
-  dante_font_family_serif: dante_font_family_sans,
+  dante_font_family_serif: 'Montserrat, ' + dante_font_family_sans,
   dante_font_family_sans: dante_font_family_sans,
   dante_font_family_mono: `Menlo, Monaco, Consolas, "Courier New", "Courier", monospace;`,
   dante_font_family_base: dante_font_family_sans,
