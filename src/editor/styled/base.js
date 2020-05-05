@@ -11,15 +11,6 @@ const EditorContainer = styled.div`
   line-height: ${props => props.theme.dante_editor_line_height};
   color: ${props => props.theme.dante_text_color};
 
-  @media (max-width: 500px) {
-
-    .postContent {
-      font-size: ${props => math(`${props.theme.dante_editor_font_size} - 6`)};
-      line-height: ${props => props.theme.dante_editor_line_height};
-    }
-
-  }
-
   .public-DraftEditorPlaceholder-root {
     color: ${props => lighten(0.3, props.theme.dante_text_color)};
     position: absolute;
@@ -87,7 +78,9 @@ const EditorContainer = styled.div`
   }
 
   .graf--code {
-    line-height: 1em;
+    line-height: 1.3em;
+    font-size: 14px;
+    padding: 8px 12px;
   }
 
   .graf--p.dante--spinner{
@@ -363,18 +356,32 @@ const EditorContainer = styled.div`
     color: inherit;
   }
 
-  @media (max-width: 500px) {
-
-    .graf--h2 {
-      font-size: 2.6em;
+  @media (max-width: 768px) {
+    .postContent {
+      font-size: $dante-editor-font-size - 2;
+      line-height: $dante-editor-line-height - 0.1;
     }
-    .graf--h3 {
-      font-size: 1.6em;
+  
+    .graf--h2  {
+      font-size: 40px;
+      line-height: 45px;
     }
+  
+    .graf--h3  {
+      font-size: 35px;
+      line-height: 38px;
+    }
+  
     .graf--h4 {
-      font-size: 1.4em;
+      font-size: 24px;
+      line-height: 35px;
     }
-
+  
+    .graf--blockquote {
+      margin-left: -10px;
+      padding-left: 10px;
+      line-height: 1.6;
+    }
   }
 
   .graf--divider span{
@@ -426,7 +433,7 @@ const EditorContainer = styled.div`
     font-family: ${props => props.theme.dante_font_family_sans};
     letter-spacing: 0;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.4;
     color: ${props => lighten(0.2, props.theme.dante_text_color)};
     outline: 0;
@@ -503,6 +510,11 @@ const EditorContainer = styled.div`
       }
     }
 
+    .sectionLayout--fullWidth .aspectRatioPlaceholder {
+      max-width: none!important;
+      max-height: none!important;
+    }
+
     div[contenteditable="false"] {
       .danteDefaultPlaceholder{
         display:none;
@@ -538,6 +550,20 @@ const EditorContainer = styled.div`
         text-align: center;
         left: 0;
         margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      figure.graf--layoutOutsetLeft {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 1012px) {
+      .graf--layoutFillWidth {
+        margin-left: -9.5%;
+        margin-right: -9.5%;
       }
     }
 
