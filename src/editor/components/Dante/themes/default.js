@@ -7,8 +7,8 @@ const dante_text_color = '#4a4a4a'
 
 
 const theme = {
-  dante_font_family_serif: 'Montserrat, ' + dante_font_family_sans,
-  dante_font_family_sans: dante_font_family_sans,
+  dante_font_family_serif: dante_font_family_sans,
+  dante_font_family_sans: 'Montserrat, ' + dante_font_family_sans,
   dante_font_family_mono: `Menlo, Monaco, Consolas, "Courier New", "Courier", monospace;`,
   dante_font_family_base: dante_font_family_sans,
 

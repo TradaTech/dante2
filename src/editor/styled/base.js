@@ -80,7 +80,7 @@ const EditorContainer = styled.div`
   .graf--code {
     line-height: 1.3em;
     font-size: 14px;
-    padding: 8px 12px;
+    padding: 12px 18px;
   }
 
   .graf--p.dante--spinner{
@@ -200,7 +200,7 @@ const EditorContainer = styled.div`
     padding-left: 15px;
     margin-bottom: 25px;
     font-size: 1.2em;
-    line-height: 1.9em;
+    line-height: 1.5;
     margin-top: 20px;
 
   }
@@ -266,7 +266,7 @@ const EditorContainer = styled.div`
     border-width: 1px;
     box-sizing: border-box;
     //color: rgba(0, 0, 0, 0.6);
-    font-family: ${props => props.theme.dante_font_family_sans};
+    font-family: ${props => props.theme.dante_font_family_serif};
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
@@ -430,7 +430,7 @@ const EditorContainer = styled.div`
     top: 0;
     text-align: center;
     margin-top: 0;
-    font-family: ${props => props.theme.dante_font_family_sans};
+    font-family: ${props => props.theme.dante_font_family_serif};
     letter-spacing: 0;
     font-weight: 400;
     font-size: 14px;
