@@ -4667,14 +4667,14 @@ var findEntities = function findEntities(entityType, instance, contentBlock, cal
 
 var _theme;
 
-var dante_font_family_sans = "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;";
+var dante_font_family_sans = "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;";
 var tooltip_size = '32px';
 var dante_control_color = '#333333';
 var dante_inversed_color = '#FFFFFF';
 var dante_accent_color = '#5BD974';
 var dante_text_color = '#4a4a4a';
 var theme = (_theme = {
-  dante_font_family_serif: dante_font_family_sans,
+  dante_font_family_serif: 'Montserrat, ' + dante_font_family_sans,
   dante_font_family_sans: dante_font_family_sans,
   dante_font_family_mono: "Menlo, Monaco, Consolas, \"Courier New\", \"Courier\", monospace;",
   dante_font_family_base: dante_font_family_sans,
