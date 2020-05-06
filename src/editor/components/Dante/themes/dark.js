@@ -13,7 +13,7 @@ const theme = {
 
   // Editor
   dante_editor_font_size: '20px' ,
-  dante_editor_line_height: '1.7' ,
+  dante_editor_line_height: '1.6' ,
 
   dante_font_family_sans_serif: dante_font_family_sans,
   dante_visual_debugger: 'false',

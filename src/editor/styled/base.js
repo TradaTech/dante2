@@ -71,10 +71,13 @@ const EditorContainer = styled.div`
     margin-bottom: 30px;
   }
 
-  .graf--p,
   .graf--blockquote,
   .graf--pullquote {
     margin-bottom: 30px;
+  }
+
+  .graf--p {
+    margin-bottom: 20px;
   }
 
   .graf--code {
@@ -96,11 +99,11 @@ const EditorContainer = styled.div`
 
   .graf--h2 {
     font-family: ${props => props.theme.dante_font_family_sans};
-    font-size: 3.6em;
+    font-size: 50px;
+    line-height: 1.1;
     font-style: normal;
     font-weight: 700;
     letter-spacing: -0.04em;
-    line-height: 1;
     margin-bottom: .4em;
     margin-left: -3px;
     margin-top: 40px;
@@ -108,16 +111,16 @@ const EditorContainer = styled.div`
   }
   .graf--h3 {
     font-family: ${props => props.theme.dante_font_family_sans};
+    font-size: 36px;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     font-weight: 700;
     font-style: normal;
-    font-size: 2.1em;
     margin-left: -1.8px;
-    line-height: 1.2;
     margin-top: 40px;
     margin-bottom: .7em;
   }
-  .public-DraftStyleDefault-pre{
+  .public-DraftStyleDefault-pre {
     overflow: inherit;
   }
   .graf--h4 {
@@ -125,9 +128,9 @@ const EditorContainer = styled.div`
     letter-spacing: -0.02em;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 26px;
     margin-left: -1.5px;
-    line-height: 1.2;
+    line-height: 1.25;
     color: ${props => lighten(0.3, props.theme.dante_text_color)};
     margin-top: 40px;
     margin-bottom: .6em;
@@ -199,7 +202,7 @@ const EditorContainer = styled.div`
     margin-left: -17px;
     padding-left: 15px;
     margin-bottom: 25px;
-    font-size: 1.2em;
+    font-size: 22px;
     line-height: 1.5;
     margin-top: 20px;
 
@@ -358,8 +361,7 @@ const EditorContainer = styled.div`
 
   @media (max-width: 768px) {
     .postContent {
-      font-size: $dante-editor-font-size - 2;
-      line-height: $dante-editor-line-height - 0.1;
+      font-size: 18px;
     }
   
     .graf--h2  {
@@ -426,15 +428,14 @@ const EditorContainer = styled.div`
   }
 
   .imageCaption {
-
     top: 0;
     text-align: center;
     margin-top: 0;
     font-family: ${props => props.theme.dante_font_family_serif};
     letter-spacing: 0;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 1.5;
     color: ${props => lighten(0.2, props.theme.dante_text_color)};
     outline: 0;
     z-index: 300;
